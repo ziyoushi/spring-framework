@@ -46,17 +46,21 @@ public enum FilterType {
 	/**
 	 * Filter candidates matching a given AspectJ type pattern expression.
 	 * @see org.springframework.core.type.filter.AspectJTypeFilter
+	 * 不常用
 	 */
 	ASPECTJ,
 
 	/**
 	 * Filter candidates matching a given regex pattern.
 	 * @see org.springframework.core.type.filter.RegexPatternTypeFilter
+	 * 按照正则表达式规则
 	 */
 	REGEX,
 
-	/** Filter candidates using a given custom
+	/**
+	 * Filter candidates using a given custom
 	 * {@link org.springframework.core.type.filter.TypeFilter} implementation.
+	 * 自定义规则 需要实现TypeFilter
 	 */
 	CUSTOM
 
